@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  max-width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: hsl(243, 87%, 12%);
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.header img {
+  width: 650px;
+  height: 400px;
+}
+.header h1 {
+  width: 580px;
+  margin-bottom: 17px;
+  font-size: 45px;
+}
+.header p {
+  width: 450px;
+  margin-bottom: 17px;
+}
+.header input {
+  width: 250px;
+  height: 35px;
+  padding: 5px;
+}
+.header button {
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  width: 150px;
+  font-size: 13px;
+}
+.main-content {
+  background-image: url(images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+.main-content .content {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .img-2 {
+  width: 681px;
+  height: 430px;
+}
+.content {
+  padding: 25px;
+}
+.content-1 h1 {
+  margin-bottom: 20px;
+  color: hsl(243, 87%, 12%);
+  font-size: 40px;
+}
+.content-1 p {
+  margin-bottom: 15px;
+  width: 529px;
+  color: hsl(243, 87%, 12%);
+}
+.content-1 a {
+  text-decoration: solid;
+  color: hsl(170, 45%, 43%);
+}
+.content-1 .go {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 45px;
+  border-bottom: solid 2px hsl(170, 45%, 43%);
+  width: 173px;
+  padding: 3px;
+}
+.profile-card {
+  box-shadow: 0px 3px 22px -12px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 25px;
+  width: 398px;
+}
+.profile-card .quotes {width: 20px;
+margin-bottom: 10px;}
+.profile-card .avatar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+.avatar img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.avatar-text {
+  color: hsl(243, 87%, 12%);
+}
+.avatar-text .kyl {font-weight: 700;}
+.avatar-text .sec-p {
+  font-size: 12px;
+}
+.sec-content {
+  background-color: hsl(238, 22%, 44%);
+  padding: 25px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.sec-content .text .h1 {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.sec-content .text .word {
+  font-size: 12px;
+  width: 370px;
+  font-weight: 400;
+}
+.try-it {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.try-it button {
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  width: 150px;
+  font-size: 13px;
+}
+.try-it input {
+  width: 250px;
+  height: 35px;
+  padding: 5px;
+}
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 35px;
+}
+footer ul {
+  list-style: none;
+}
+footer img {
+  margin-bottom: 20px;
+}
+ul li {
+  margin-bottom: 10px;
+}
+footer .ul-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.social i {border: 1px solid #fff;
+border-radius: 50%;
+padding:6px}
+@media (max-width:600px){.container 
+    {width: 100%;
+        margin: 0 auto;}
+    nav img {width: 100px;}
+    .header{flex-direction: column-reverse;
+gap: 20px;}
+.header img {width: 450px;}
+.nav-text {text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;}
+.nav-text button {width: 250px;}
+.header h1 {font-size: 20px;
+width: 250px;}
+.header p {font-size: 15px;
+width: 310px;}
+.main-content {flex-direction: column-reverse;
+align-items: center;
+background-image: url(images/bg-curve-mobile.svg);}
+.main-content .img-2 {width: 470px;
+height: 350px;}
+.content-1 h1 {text-align: center;
+font-size: 20px;}
+.content-1 p {font-size: 15px;
+width: 350px;}
+.go {margin: 0 auto;}
+.sec-content {flex-direction: column;
+align-items: center;
+gap: 15px;
+text-align: center;}
+.sec-content .text .h1 {font-size:20px ;}
+.sec-content .text .word {font-size: 14px;
+width: 280px;}
+.try-it button{width: 250px;}
+footer {display: flex;
+flex-direction: column;
+gap: 25px;}
+footer .ul-2 {display: flex;
+flex-direction: column;}
+.social{margin: 0 auto;
+display: flex;
+gap: 25px;}}
